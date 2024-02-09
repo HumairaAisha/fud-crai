@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flex">
+    <div class="reg_main">
+    <h2>Fill the Form Below</h2>
+    <form action="" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" placeholder="Name" id="name" name="name" required>
+    
+      <label for="email">Email</label>
+      <input type="email" placeholder="Email" id="email" name="email" required>
+    
+      <label for="phoneNumber">Phone Number</label>
+      <input type="tel" placeholder="Phone Number" id="phoneNumber" name="phoneNumber" required>
+
+        <label for="faculty">Faculty</label>
+        <select name="faculty" id="faculty" required>
+        <option value=""></option>
+        <option value="">Computing</option>
+        <option value="">Science</option>
+        <option value="">Art and Social Science</option>
+        <option value="">Medical Sciences</option>
+        <option value="">Management Science</option>
+        <option value="">Eduaction</option>
+        </select>
+          <label for="department">Program of Study</label>
+          <input type="text" placeholder="Program of Study" id="department" name="department" required> 
+    
+          <label for="track" >Select Track</label>
+          <select name="track" id="track" required>
+          <option value=""></option>
+          <option value="">Web Development</option>
+          <option value="">Mobile App Development</option>
+          <option value="">Data Science</option>
+          <option value="">Robotics</option>
+          </select>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="4"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+      <div class="reg_button">
+        <a href="index.html">Main Page</a>
+      </div>
+    </div>
+    
+</div>
+</body>
+</html>

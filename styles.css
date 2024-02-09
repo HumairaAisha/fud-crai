@@ -1,0 +1,328 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+section{
+  width: 100%;
+  height: 100px;
+}
+section nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 0 10px rgb(0, 0, 0,0.5);
+  z-index: 1000;
+  padding-left: 20px;
+}
+section nav div{
+  width: 100PX;
+  margin: 7px 0;
+}
+
+li {
+ display: inline-block;
+ margin: 0 15px;
+ font-style:  500;
+ font-size: 20px;
+ color: #000;
+}
+
+ a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-style: 500;
+
+}
+
+ a:hover::after{
+  width: 100px;
+}
+ a:hover{
+  color: peru;
+}
+section .main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 130px
+}
+
+.main h1 {
+  font-size: 60px;
+  position: relative;
+  left: 0px;
+  bottom: 100px;
+
+}
+
+.main span {
+  color: peru;
+}
+
+.main .main_image img{
+  width: 500px;
+  position: relative;
+  left: 50px;
+}
+
+.main_text p {
+  width: 650px;
+  text-align: justify;
+  position: relative;
+  left: 90px;
+  bottom: 123px;
+  line-height: 20px;
+
+}
+
+section .main_btn {
+  background: peru;
+  position: relative;
+  left: 70px;
+  bottom: 120px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 10px;
+ 
+}
+
+.main_btn a {
+  color: white;
+  margin-right: 5px;
+  text-decoration: none;
+}
+.main_btn:hover {
+  transform: translatey(10px);
+}
+
+/* About */
+
+section .about{
+  width: 100px;
+  height: 100px;
+  padding: 70px 0;
+}
+
+.about_main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about_main .image img{
+width: 600px;
+position: relative;
+top:450px;
+left: 600px;
+}
+
+.about_text h1{
+  width: 650px;
+  text-align: justify;
+  left:center;
+  position: relative;
+  bottom: -450px;
+  left: 650px;
+  font-size: 50px;
+  color: peru;
+
+}
+
+.about_text h2{
+  width: 650px;
+  text-align: justify;
+  left:center;
+  position: relative;
+  bottom: -450px;
+  left: 650px;
+  font-size: 30px;
+}
+
+.about_text p{
+  width: 650px;
+  text-align: justify;
+  position: relative;
+  left: 650px;
+  bottom: -450px;
+  line-height: 20px;
+}
+
+.courses{
+  width: 100px;
+  height: 100px;
+  padding: 70px 0;
+}
+
+.courses_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.courses_main h2{
+  width: 800px;
+  position: relative;
+  left:600px;
+  left: center;
+  bottom: -450px;
+  text-align: center;
+  font-size: 50px;
+  color: peru;
+}
+
+.courses_image_box{
+  width: 100px;
+  margin: 0 15px;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-gap:20px;
+  
+ 
+}
+
+.courses_image img{
+  width: 400px;
+  position: relative;
+  top:900px;
+  left:-300px;
+  }
+
+ .courses_image h3{
+  width: 650px;
+  position: relative;
+  bottom: -870px;
+  left: -300px;
+  font-size: 40px;
+}
+
+.courses_image p{
+  width: 650px;
+  position: relative;
+  bottom: -830px;
+  left: -300px;
+  
+}
+/* registration */
+
+.reg_main h2{
+  width: 800px;
+  position: relative;
+  left: 250px;
+  bottom: -1600px;
+  text-align: center;
+  font-size: 50px;
+  color: peru;
+}
+
+.reg_main p{
+  width: 800px;
+  position: relative;
+  left: 250px;
+  bottom: -1590px;
+  font-size: 30px;
+
+}
+.reg_btn {
+  background: peru;
+  position: relative;
+  left: 600px;
+  bottom: -1600px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 10px;
+ 
+}
+
+.reg_btn a{
+  color: white;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+
+.reg_main {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba (0, 0, 0, 0.1);
+}
+
+.reg_main h2 {
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  top: 0;
+  text-align: center;
+  left: -190px;
+}
+
+.reg_main form{
+  background-color: white;
+}
+.reg_main input[type="text"],
+.reg_main input[type="email"],
+.reg_main input[type="password"],
+select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.reg_main input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+  left: 100px;
+}
+
+.reg_main input[type="submit"]:hover{
+  background-color: #45a049;
+}
+
+.reg_button {
+  background: peru;
+  position: relative;
+  left: -500px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 10px;
+ 
+}
+
+.reg_button a{
+  color: white;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+
+
+
